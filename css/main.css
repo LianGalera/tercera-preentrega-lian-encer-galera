@@ -2,6 +2,32 @@
 /* Kenia Font */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 /* Bootstrap Icons */
+/*Nav*/
+.containerAM {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.containerAM nav {
+  height: 100vh;
+  background-color: #F1C10C;
+  grid-column: 1/1;
+}
+.containerAM nav ul {
+  list-style: none;
+}
+.containerAM nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.containerAM .aboutMe {
+  grid-column: 2/7;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
 * {
   margin: 0;
   font-family: "Kanit", sans-serif;
@@ -19,11 +45,35 @@
   justify-content: center;
   align-items: center;
 }
-.container main img {
-  width: 100%;
+.container main h1 {
+  font-size: 2rem;
+  margin: 0.5em;
+}
+.container main h1 span {
+  color: #F1C10C;
 }
 .container main h2 {
+  font-size: 1.5rem;
+  padding: 0.2em;
   background-color: #F1C10C;
+}
+.container main p {
+  margin: 1em;
+}
+.container main .button {
+  padding: 0.5em;
+  border-radius: 30px;
+  background-color: #F1C10C;
+}
+.container main .button:hover {
+  background-color: gray;
+}
+.container main .button a {
+  text-decoration: none;
+  color: black;
+}
+.container aside img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

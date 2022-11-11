@@ -1,0 +1,32 @@
+/*Nav*/
+
+.containerAM {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+
+    nav {
+        height: 100vh;
+        background-color: #F1C10C;
+        grid-column: 1 / 1;
+
+        ul {
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    .aboutMe {
+        grid-column: 2 / 7;
+    }
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        display: none;
+    }
+}
