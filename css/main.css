@@ -6,7 +6,7 @@
 .containerAM {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
 }
 .containerAM nav {
   grid-column: 1/1;
@@ -103,6 +103,19 @@
     font-weight: 100;
   }
 }
+.containerPortfolio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+.containerPortfolio header nav {
+  grid-column: 1/1;
+}
+.containerPortfolio .title h1 {
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+
 * {
   margin: 0;
   font-family: "Kanit", sans-serif;
