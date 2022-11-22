@@ -6,6 +6,7 @@
 .containerAM {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 .containerAM nav {
   grid-column: 1/1;
@@ -26,29 +27,28 @@
   text-decoration: none;
   color: black;
 }
-.containerAM .aboutMe, .containerAM .contactForm {
+.containerAM .aboutMe {
   grid-column: 2/6;
   text-align: center;
-  margin: 3rem;
 }
-.containerAM .aboutMe h1, .containerAM .contactForm h1 {
-  display: inline;
+.containerAM .aboutMe h1 {
+  display: inline-block;
   border: 2px dotted black;
   text-transform: uppercase;
   font-size: 3rem;
   padding: 1.5rem 2.5rem;
 }
-.containerAM .aboutMe h2, .containerAM .contactForm h2 {
+.containerAM .aboutMe h2 {
   font-weight: 200;
   margin: 4rem;
 }
-.containerAM .aboutMe h2 span, .containerAM .contactForm h2 span {
+.containerAM .aboutMe h2 span {
   font-weight: bold;
 }
-.containerAM .aboutMe p, .containerAM .contactForm p {
+.containerAM .aboutMe p {
   font-weight: 100;
 }
-.containerAM .aboutMe button, .containerAM .contactForm button {
+.containerAM .aboutMe button {
   margin: 1rem;
   padding: 0.5rem;
   font-size: 1rem;
@@ -56,17 +56,24 @@
   background-color: #F1C10C;
   border: none;
 }
-.containerAM .aboutMe button:hover, .containerAM .contactForm button:hover {
+.containerAM .aboutMe button:hover {
   background-color: #B4B2B2;
 }
-.containerAM .aboutMe button a, .containerAM .contactForm button a {
+.containerAM .aboutMe button a {
   text-decoration: none;
   color: black;
 }
+.containerAM .aboutMe .services {
+  margin: 3rem;
+}
+.containerAM .aboutMe .services img {
+  margin: 0.5rem;
+  width: 400px;
+}
 .containerAM img {
   background-color: gray;
-  width: 100%;
-  height: auto;
+  width: 303px;
+  height: 303px;
 }
 
 @media screen and (max-width: 1200px) {
